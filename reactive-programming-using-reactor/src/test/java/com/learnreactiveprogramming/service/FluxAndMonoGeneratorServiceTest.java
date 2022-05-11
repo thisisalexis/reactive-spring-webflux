@@ -208,20 +208,7 @@ class FluxAndMonoGeneratorServiceTest {
 
     }
 
-    @Test
-    void explore_concatWith() {
 
-        //given
-
-        //when
-        Flux<String> result = fluxAndMonoGeneratorService.explore_concatWith();
-
-        //then
-        StepVerifier.create(result)
-                .expectNext("A", "B")
-                .verifyComplete();
-
-    }
 
     @Test
     void explore_merge() {
